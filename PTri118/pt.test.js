@@ -1,9 +1,5 @@
 import { generate } from "./pt";
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
-});
-
 test('length of output array is equal to numRows', () => {
     expect(generate(2).length).toBe(2);
 });
@@ -16,12 +12,12 @@ test('Output is ERROR if numRows is not between 1-30', () => {
 });
 
 test('One row has a single array with a single item of 1', () => {
-    expect(generate(1)).toBe([[1]]);
+    expect(generate(1)).toStrictEqual([[1]]);
 });
 
 test('Correct output for numRows = 5', () => {
     const output = [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]];
-    expect(generate(5)).toBe(output);
+    expect(generate(5)).toStrictEqual(output);
 });
 
 test('Max row begins and ends with 1', () => {
