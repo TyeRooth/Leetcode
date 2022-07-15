@@ -1,4 +1,4 @@
-function sum(a, b) {
-    return a + b;
+function generate(numRows) {
+    return numRows;
   }
-export { sum };
+export { generate };
