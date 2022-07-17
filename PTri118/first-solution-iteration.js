@@ -1,5 +1,5 @@
 //Simple iteration
-
+// Run times (ms): 111, 96, 78, 86, 94   AVG = 93
 function generate(numRows) {
     if (numRows < 1 || numRows > 30 || typeof(numRows) !== "number") {
         return 'ERROR';
@@ -24,12 +24,10 @@ function generate(numRows) {
                     row.push(prevRow[j] + prevRow[j - 1]);
                 }
             }
-            console.log(row);
             output.push(row);
             prevRow = row;
         }
     }
-    console.log(output);
     return output;
   }
 export { generate };

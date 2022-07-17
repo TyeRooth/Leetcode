@@ -1,4 +1,5 @@
-import { generate } from "./pt";
+//import { generate } from "./first-solution-iteration";
+import { generate } from "./second-solution";
 
 test('length of output array is equal to numRows', () => {
     expect(generate(2).length).toBe(2);
