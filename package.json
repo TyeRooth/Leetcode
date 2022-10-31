@@ -7,7 +7,7 @@
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
-    "test": "jest --watchAll --testPathPattern=problems/3/"
+    "test": "jest --watchAll --testPathPattern=problems/155/"
   },
   "dependencies": {
     "webpack": "^5.73.0"
